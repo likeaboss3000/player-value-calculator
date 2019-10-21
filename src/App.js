@@ -13,9 +13,9 @@ function App() {
     <PlayerContext.Provider value={{ players, setPlayers }}>
       <div className="provider">
         <Calculator className="calculator" />
-        <br />
-        <br />
-        <List className="list" />
+        <div className="list">
+          <List />
+        </div>
       </div>
     </PlayerContext.Provider>
   );

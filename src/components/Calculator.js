@@ -70,80 +70,83 @@ export default function Calculator() {
     >
       {({ values, handleChange, handleSubmit, isSubmitting }) => (
         <Form onSubmit={handleSubmit}>
-          <Field
-            label="Player"
-            name="player"
-            type="text"
-            onChange={handleChange}
-            value={values.player}
-            component={StatsField}
-          />
-          <Field
-            label="PT"
-            name="pt"
-            type="number"
-            onChange={handleChange}
-            value={values.pt}
-            component={StatsField}
-          />
-          <Field
-            label="AST"
-            name="ast"
-            type="number"
-            onChange={handleChange}
-            value={values.ast}
-            component={StatsField}
-          />
-          <Field
-            label="REB"
-            name="reb"
-            type="number"
-            onChange={handleChange}
-            value={values.reb}
-            component={StatsField}
-          />
-          <Field
-            label="Threes"
-            name="threes"
-            type="number"
-            onChange={handleChange}
-            value={values.threes}
-            component={StatsField}
-          />
-          <Field
-            label="STL"
-            name="stl"
-            type="number"
-            onChange={handleChange}
-            value={values.stl}
-            component={StatsField}
-          />
-          <Field
-            label="BLK"
-            name="blk"
-            type="number"
-            onChange={handleChange}
-            value={values.blk}
-            component={StatsField}
-          />
-          <Field
-            label="TO"
-            name="to"
-            type="number"
-            onChange={handleChange}
-            value={values.to}
-            component={StatsField}
-          />
-          <Field
-            label="PF"
-            name="pf"
-            type="number"
-            onChange={handleChange}
-            value={values.pf}
-            component={StatsField}
-          />
+          <div style={style}>
+            <Field
+              label="Player"
+              name="player"
+              type="text"
+              onChange={handleChange}
+              value={values.player}
+              component={StatsField}
+            />
+            <Field
+              label="PT"
+              name="pt"
+              type="number"
+              onChange={handleChange}
+              value={values.pt}
+              component={StatsField}
+            />
+            <Field
+              label="AST"
+              name="ast"
+              type="number"
+              onChange={handleChange}
+              value={values.ast}
+              component={StatsField}
+            />
+            <Field
+              label="REB"
+              name="reb"
+              type="number"
+              onChange={handleChange}
+              value={values.reb}
+              component={StatsField}
+            />
+            <Field
+              label="Threes"
+              name="threes"
+              type="number"
+              onChange={handleChange}
+              value={values.threes}
+              component={StatsField}
+            />
+            <Field
+              label="STL"
+              name="stl"
+              type="number"
+              onChange={handleChange}
+              value={values.stl}
+              component={StatsField}
+            />
+            <Field
+              label="BLK"
+              name="blk"
+              type="number"
+              onChange={handleChange}
+              value={values.blk}
+              component={StatsField}
+            />
+            <Field
+              label="TO"
+              name="to"
+              type="number"
+              onChange={handleChange}
+              value={values.to}
+              component={StatsField}
+            />
+            <Field
+              label="PF"
+              name="pf"
+              type="number"
+              onChange={handleChange}
+              value={values.pf}
+              component={StatsField}
+            />
+          </div>
           <br />
           <br />
+
           <Button type="submit" disabled={isSubmitting}>
             Submit
           </Button>
@@ -152,3 +155,8 @@ export default function Calculator() {
     </Formik>
   );
 }
+
+const style = {
+  display: "flex",
+  flexFlow: "row nowrap"
+};
