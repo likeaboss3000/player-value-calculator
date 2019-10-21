@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/player-value-calculator/public/static/css/main.38dd50f9.chunk.css",
-    "main.js": "/player-value-calculator/public/static/js/main.61a8944c.chunk.js",
-    "main.js.map": "/player-value-calculator/public/static/js/main.61a8944c.chunk.js.map",
-    "runtime-main.js": "/player-value-calculator/public/static/js/runtime-main.a5c4a84d.js",
-    "runtime-main.js.map": "/player-value-calculator/public/static/js/runtime-main.a5c4a84d.js.map",
-    "static/js/2.c678095d.chunk.js": "/player-value-calculator/public/static/js/2.c678095d.chunk.js",
-    "static/js/2.c678095d.chunk.js.map": "/player-value-calculator/public/static/js/2.c678095d.chunk.js.map",
-    "index.html": "/player-value-calculator/public/index.html",
-    "precache-manifest.de061d4ce83d92771e208f6be4fb90f5.js": "/player-value-calculator/public/precache-manifest.de061d4ce83d92771e208f6be4fb90f5.js",
-    "service-worker.js": "/player-value-calculator/public/service-worker.js",
-    "static/css/main.38dd50f9.chunk.css.map": "/player-value-calculator/public/static/css/main.38dd50f9.chunk.css.map"
+    "main.css": "/player-value-calculator/static/css/main.38dd50f9.chunk.css",
+    "main.js": "/player-value-calculator/static/js/main.04d80654.chunk.js",
+    "main.js.map": "/player-value-calculator/static/js/main.04d80654.chunk.js.map",
+    "runtime-main.js": "/player-value-calculator/static/js/runtime-main.63416e03.js",
+    "runtime-main.js.map": "/player-value-calculator/static/js/runtime-main.63416e03.js.map",
+    "static/js/2.c678095d.chunk.js": "/player-value-calculator/static/js/2.c678095d.chunk.js",
+    "static/js/2.c678095d.chunk.js.map": "/player-value-calculator/static/js/2.c678095d.chunk.js.map",
+    "index.html": "/player-value-calculator/index.html",
+    "precache-manifest.743fdd347b97fb08f2f08868eaf3f42e.js": "/player-value-calculator/precache-manifest.743fdd347b97fb08f2f08868eaf3f42e.js",
+    "service-worker.js": "/player-value-calculator/service-worker.js",
+    "static/css/main.38dd50f9.chunk.css.map": "/player-value-calculator/static/css/main.38dd50f9.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.a5c4a84d.js",
+    "static/js/runtime-main.63416e03.js",
     "static/js/2.c678095d.chunk.js",
     "static/css/main.38dd50f9.chunk.css",
-    "static/js/main.61a8944c.chunk.js"
+    "static/js/main.04d80654.chunk.js"
   ]
 }
