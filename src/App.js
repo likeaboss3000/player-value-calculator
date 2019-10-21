@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+
+import Calculator from "./components/Calculator";
+import List from "./components/List";
+import { PlayerContext } from "./context/PlayerContext";
+import "./App.css";
 
 function App() {
+  const [players, setPlayers] = useState([]);
+
+  useEffect(() => console.log(players), [players, setPlayers]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PlayerContext.Provider value={{ players, setPlayers }}>
+      <div className="provider">
+        <Calculator className="calculator" />
+        <br />
+        <br />
+        <List className="list" />
+      </div>
+    </PlayerContext.Provider>
   );
 }
 
