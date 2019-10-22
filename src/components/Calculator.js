@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Formik, Form, Field } from "formik";
 import * as yup from "yup";
 import Button from "@material-ui/core/Button";
+import uuidv4 from "uuid/v4";
 
 import StatsField from "./StatsField";
 import { PlayerContext } from "../context/PlayerContext";
@@ -50,6 +51,7 @@ export default function Calculator() {
     <Formik
       validationSchema={schema}
       initialValues={{
+        id: "",
         player: "",
         pt: "",
         ast: "",
@@ -62,7 +64,8 @@ export default function Calculator() {
       }}
       onSubmit={(values, { setSubmitting, resetForm }) => {
         const finalScore = score(values);
-        setPlayers([...players, { ...values, finalScore }]);
+        const id = uuidv4();
+        setPlayers([...players, { ...values, finalScore, id }]);
         setSubmitting(true);
         resetForm();
         setSubmitting(false);

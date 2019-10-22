@@ -6,6 +6,8 @@ import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import IconButton from "@material-ui/core/IconButton";
+import ClearIcon from "@material-ui/icons/Clear";
 
 import { PlayerContext } from "../context/PlayerContext";
 
@@ -29,29 +31,24 @@ function totalScore(players) {
     .map(({ finalScore }) => Number(finalScore))
     .reduce((sum, i) => {
       return sum + i;
-    }, 0);
+    }, 0)
+    .toFixed(2);
 }
 
 export default function List() {
-  const { players } = useContext(PlayerContext);
+  const { players, setPlayers } = useContext(PlayerContext);
 
   const classes = useStyles();
 
   const lineupScore = useCallback(totalScore(players));
-  console.log(lineupScore);
 
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
-        <label>Player Stats</label>
-
-        <Table
-          className={classes.table}
-          size="small"
-          aria-label="a dense table"
-        >
+        <Table className={classes.table} aria-label="spanning table">
           <TableHead>
             <TableRow>
+              <TableCell padding="checkbox"></TableCell>
               <TableCell>Player</TableCell>
               <TableCell align="right">PT</TableCell>
               <TableCell align="right">AST</TableCell>
@@ -66,10 +63,21 @@ export default function List() {
           </TableHead>
           <TableBody>
             {players.map(player => (
-              <TableRow key={player.player}>
-                <TableCell component="th" scope="row">
-                  {player.player}
+              <TableRow key={player.id}>
+                <TableCell padding="checkbox" component="th" scope="row">
+                  <IconButton
+                    onClick={() => {
+                      const removedPlayer = player.id;
+                      const newLineup = players.filter(
+                        player => player.id !== removedPlayer
+                      );
+                      setPlayers(newLineup);
+                    }}
+                  >
+                    <ClearIcon />
+                  </IconButton>
                 </TableCell>
+                <TableCell>{player.player}</TableCell>
                 <TableCell align="right">{player.pt}</TableCell>
                 <TableCell align="right">{player.ast}</TableCell>
                 <TableCell align="right">{player.reb}</TableCell>
@@ -82,8 +90,16 @@ export default function List() {
               </TableRow>
             ))}
             <TableRow>
-              <TableCell rowSpan={6} />
-              <TableCell colSpan={1}>LineupScore</TableCell>
+              <TableCell />
+              <TableCell rowSpan={1}>Total</TableCell>
+              <TableCell />
+              <TableCell />
+              <TableCell />
+              <TableCell />
+              <TableCell />
+              <TableCell />
+              <TableCell />
+              <TableCell />
               <TableCell align="right">{lineupScore}</TableCell>
             </TableRow>
           </TableBody>
