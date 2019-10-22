@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ed16e156efd8a8e1f89448af6f8743a",
+    "revision": "7b9958d50aad1af50b00072e3eb4b480",
     "url": "/player-value-calculator/index.html"
   },
   {
-    "revision": "40776d0f6e8a0c827800",
+    "revision": "d04f4a1da19a3d30769a",
     "url": "/player-value-calculator/static/css/main.12bd86d1.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/player-value-calculator/static/js/2.c678095d.chunk.js"
   },
   {
-    "revision": "40776d0f6e8a0c827800",
-    "url": "/player-value-calculator/static/js/main.2d8d62bd.chunk.js"
+    "revision": "d04f4a1da19a3d30769a",
+    "url": "/player-value-calculator/static/js/main.d3376993.chunk.js"
   },
   {
     "revision": "be9c2f4c22a12bdf8b93",

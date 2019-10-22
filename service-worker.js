@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/player-value-calculator/precache-manifest.ab86fb8a8d4a9bd8551adb66aec11f3e.js"
+  "/player-value-calculator/precache-manifest.b22cf357ee20a3136bb44e3712197e8b.js"
 );
 
 self.addEventListener('message', (event) => {
