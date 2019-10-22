@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f19dc64760d431f071b0ab541a432884",
+    "revision": "c5c117902b799af007277fc73548e45c",
     "url": "/player-value-calculator/index.html"
   },
   {
-    "revision": "80fc3e016590ecf050bb",
+    "revision": "1a754560ac8679367c5a",
     "url": "/player-value-calculator/static/css/main.12bd86d1.chunk.css"
   },
   {
-    "revision": "f86b37d1cbc333f8d606",
-    "url": "/player-value-calculator/static/js/2.0b6b1b82.chunk.js"
+    "revision": "e50455127068ddf02460",
+    "url": "/player-value-calculator/static/js/2.c95dcb70.chunk.js"
   },
   {
-    "revision": "80fc3e016590ecf050bb",
-    "url": "/player-value-calculator/static/js/main.6614ae19.chunk.js"
+    "revision": "1a754560ac8679367c5a",
+    "url": "/player-value-calculator/static/js/main.40ca8844.chunk.js"
   },
   {
     "revision": "be9c2f4c22a12bdf8b93",
