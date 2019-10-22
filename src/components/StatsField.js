@@ -8,6 +8,7 @@ export default function StatsField({ form, field, ...props }) {
   return (
     <TextField
       margin="normal"
+      required={true}
       helperText={errorText}
       error={!!errorText}
       {...field}
