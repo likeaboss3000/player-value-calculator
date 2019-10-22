@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useCallback } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -24,9 +24,21 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+function totalScore(players) {
+  return players
+    .map(({ finalScore }) => Number(finalScore))
+    .reduce((sum, i) => {
+      return sum + i;
+    }, 0);
+}
+
 export default function List() {
   const { players } = useContext(PlayerContext);
+
   const classes = useStyles();
+
+  const lineupScore = useCallback(totalScore(players));
+  console.log(lineupScore);
 
   return (
     <div className={classes.root}>
@@ -69,6 +81,11 @@ export default function List() {
                 <TableCell align="right">{player.finalScore}</TableCell>
               </TableRow>
             ))}
+            <TableRow>
+              <TableCell rowSpan={6} />
+              <TableCell colSpan={1}>LineupScore</TableCell>
+              <TableCell align="right">{lineupScore}</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
       </Paper>
