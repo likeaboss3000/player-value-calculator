@@ -20,14 +20,14 @@ var schema = yup.object({
     .string()
     .required()
     .trim(),
-  pt: yup.number().required(),
-  ast: yup.number().required(),
-  reb: yup.number().required(),
-  threes: yup.number().required(),
-  stl: yup.number().required(),
-  blk: yup.number().required(),
-  to: yup.number().required(),
-  pf: yup.number().required()
+  pt: yup.number(),
+  ast: yup.number(),
+  reb: yup.number(),
+  threes: yup.number(),
+  stl: yup.number(),
+  blk: yup.number(),
+  to: yup.number(),
+  pf: yup.number()
 });
 
 function score(values) {

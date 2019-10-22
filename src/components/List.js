@@ -31,6 +31,8 @@ export default function List() {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
+        <label>Player Stats</label>
+
         <Table
           className={classes.table}
           size="small"
