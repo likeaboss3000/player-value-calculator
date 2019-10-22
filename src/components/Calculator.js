@@ -80,6 +80,7 @@ export default function Calculator() {
               component={StatsField}
             />
             <Field
+              step="0.1"
               label="PT"
               name="pt"
               type="number"
@@ -88,6 +89,7 @@ export default function Calculator() {
               component={StatsField}
             />
             <Field
+              step="0.1"
               label="AST"
               name="ast"
               type="number"
@@ -96,6 +98,7 @@ export default function Calculator() {
               component={StatsField}
             />
             <Field
+              step="0.1"
               label="REB"
               name="reb"
               type="number"
@@ -104,6 +107,7 @@ export default function Calculator() {
               component={StatsField}
             />
             <Field
+              step="0.1"
               label="Threes"
               name="threes"
               type="number"
@@ -112,6 +116,7 @@ export default function Calculator() {
               component={StatsField}
             />
             <Field
+              step="0.1"
               label="STL"
               name="stl"
               type="number"
@@ -120,6 +125,7 @@ export default function Calculator() {
               component={StatsField}
             />
             <Field
+              step="0.1"
               label="BLK"
               name="blk"
               type="number"
@@ -128,6 +134,7 @@ export default function Calculator() {
               component={StatsField}
             />
             <Field
+              step="0.1"
               label="TO"
               name="to"
               type="number"
@@ -136,6 +143,7 @@ export default function Calculator() {
               component={StatsField}
             />
             <Field
+              step="0.1"
               label="PF"
               name="pf"
               type="number"
