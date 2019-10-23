@@ -9,12 +9,18 @@ import { PlayerContext } from "../context/PlayerContext";
 
 var ptMULT = 0.71;
 var astMULT = 3.28;
-var rebMULT = 1.8;
+var rebMULT = 3.6;
 var stlMULT = 11.05;
 var blkMULT = 16.26;
 var threesMULT = 7.5;
 var toMULT = 6;
 var pfMULT = 4.42;
+// var fgMULT = 0.2112;
+// var ftMULT = 0.1287;
+// var fgaMULT = 10.98;
+// var ftaMULT = 3.06;
+// var fgAvg = 47.34;
+// var ftAvg = 77.73;
 
 var schema = yup.object({
   player: yup
@@ -25,6 +31,10 @@ var schema = yup.object({
   ast: yup.number(),
   reb: yup.number(),
   threes: yup.number(),
+  // fg: yup.number(),
+  // fga: yup.number(),
+  // ft: yup.number(),
+  // fta: yup.number(),
   stl: yup.number(),
   blk: yup.number(),
   to: yup.number(),
@@ -41,6 +51,8 @@ function score(values) {
     values.blk * blkMULT +
     values.threes * threesMULT -
     values.pf * pfMULT;
+  // ((values.fg - fgAvg) * (values.fga / fgaMULT) * fgMULT + 10) +
+  // ((values.ft - ftAvg) * (values.fta / ftaMULT) * ftMULT + 10);
   return playerValue.toFixed(2);
 }
 
@@ -57,6 +69,10 @@ export default function Calculator() {
         ast: "",
         reb: "",
         threes: "",
+        // fg: "",
+        // fga: "",
+        // ft: "",
+        // fta: "",
         stl: "",
         blk: "",
         to: "",

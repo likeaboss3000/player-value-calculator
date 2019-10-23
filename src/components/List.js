@@ -7,6 +7,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import IconButton from "@material-ui/core/IconButton";
+import Button from "@material-ui/core/Button";
 import ClearIcon from "@material-ui/icons/Clear";
 
 import { PlayerContext } from "../context/PlayerContext";
@@ -53,10 +54,10 @@ export default function List() {
               <TableCell align="right">PT</TableCell>
               <TableCell align="right">AST</TableCell>
               <TableCell align="right">REB</TableCell>
-              <TableCell align="right">TO</TableCell>
-              <TableCell align="right">3s</TableCell>
+              <TableCell align="right">3S</TableCell>
               <TableCell align="right">STL</TableCell>
               <TableCell align="right">BLK</TableCell>
+              <TableCell align="right">TO</TableCell>
               <TableCell align="right">PF</TableCell>
               <TableCell align="right">SCORE</TableCell>
             </TableRow>
@@ -81,16 +82,18 @@ export default function List() {
                 <TableCell align="right">{player.pt}</TableCell>
                 <TableCell align="right">{player.ast}</TableCell>
                 <TableCell align="right">{player.reb}</TableCell>
-                <TableCell align="right">{player.to}</TableCell>
                 <TableCell align="right">{player.threes}</TableCell>
                 <TableCell align="right">{player.stl}</TableCell>
                 <TableCell align="right">{player.blk}</TableCell>
+                <TableCell align="right">{player.to}</TableCell>
                 <TableCell align="right">{player.pf}</TableCell>
                 <TableCell align="right">{player.finalScore}</TableCell>
               </TableRow>
             ))}
             <TableRow>
-              <TableCell />
+              <TableCell>
+                <Button onClick={() => setPlayers([])}>Reset</Button>
+              </TableCell>
               <TableCell rowSpan={1}>Total</TableCell>
               <TableCell />
               <TableCell />
