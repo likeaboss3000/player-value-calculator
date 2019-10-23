@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/player-value-calculator/static/css/main.12bd86d1.chunk.css",
-    "main.js": "/player-value-calculator/static/js/main.40ca8844.chunk.js",
-    "main.js.map": "/player-value-calculator/static/js/main.40ca8844.chunk.js.map",
+    "main.js": "/player-value-calculator/static/js/main.f0b499af.chunk.js",
+    "main.js.map": "/player-value-calculator/static/js/main.f0b499af.chunk.js.map",
     "runtime-main.js": "/player-value-calculator/static/js/runtime-main.63416e03.js",
     "runtime-main.js.map": "/player-value-calculator/static/js/runtime-main.63416e03.js.map",
-    "static/js/2.c95dcb70.chunk.js": "/player-value-calculator/static/js/2.c95dcb70.chunk.js",
-    "static/js/2.c95dcb70.chunk.js.map": "/player-value-calculator/static/js/2.c95dcb70.chunk.js.map",
+    "static/js/2.b6ccd3f6.chunk.js": "/player-value-calculator/static/js/2.b6ccd3f6.chunk.js",
+    "static/js/2.b6ccd3f6.chunk.js.map": "/player-value-calculator/static/js/2.b6ccd3f6.chunk.js.map",
     "index.html": "/player-value-calculator/index.html",
-    "precache-manifest.ef9d3b1dbf330568e57002c742569ec6.js": "/player-value-calculator/precache-manifest.ef9d3b1dbf330568e57002c742569ec6.js",
+    "precache-manifest.c336625932b76b97403acbc6d242070b.js": "/player-value-calculator/precache-manifest.c336625932b76b97403acbc6d242070b.js",
     "service-worker.js": "/player-value-calculator/service-worker.js",
     "static/css/main.12bd86d1.chunk.css.map": "/player-value-calculator/static/css/main.12bd86d1.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.63416e03.js",
-    "static/js/2.c95dcb70.chunk.js",
+    "static/js/2.b6ccd3f6.chunk.js",
     "static/css/main.12bd86d1.chunk.css",
-    "static/js/main.40ca8844.chunk.js"
+    "static/js/main.f0b499af.chunk.js"
   ]
 }
